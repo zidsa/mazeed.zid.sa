@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "FF Shamel";
-  src: url("../fonts/FFShamelFamily-UniqueMedium.woff2") format("woff2"),
-    url("../fonts/FFShamelFamily-UniqueMedium.woff") format("woff");
+  src: url("/fonts/FFShamelFamily-UniqueMedium.woff2") format("woff2"),
+    url("/fonts/FFShamelFamily-UniqueMedium.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: "FF Shamel";
-  src: url("../fonts/FFShamelFamily-UniqueLight.woff2") format("woff2"),
-    url("../fonts/FFShamelFamily-UniqueLight.woff") format("woff");
+  src: url("/fonts/FFShamelFamily-UniqueLight.woff2") format("woff2"),
+    url("/fonts/FFShamelFamily-UniqueLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -20,8 +20,8 @@
 
 @font-face {
   font-family: "FF Shamel";
-  src: url("../fonts/FFShamelFamily-UniqueBook.woff2") format("woff2"),
-    url("../fonts/FFShamelFamily-UniqueBook.woff") format("woff");
+  src: url("/fonts/FFShamelFamily-UniqueBook.woff2") format("woff2"),
+    url("/fonts/FFShamelFamily-UniqueBook.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -29,8 +29,8 @@
 
 @font-face {
   font-family: "FF Shamel";
-  src: url("../fonts/FFShamelFamily-UniqueBold.woff2") format("woff2"),
-    url("../fonts/FFShamelFamily-UniqueBold.woff") format("woff");
+  src: url("/fonts/FFShamelFamily-UniqueBold.woff2") format("woff2"),
+    url("/fonts/FFShamelFamily-UniqueBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
