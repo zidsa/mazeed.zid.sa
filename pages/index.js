@@ -7,9 +7,9 @@ export default function Home() {
       <section>
         <div className="bg-[#FBFBFB] relative z-0 pb-24 overflow-hidden">
           {/* nav */}
-          <nav className="w-full flex justify-between max-w-screen-[1792px] mx-auto px-24 py-10">
+          <nav className="w-full flex justify-between max-w-screen-[1792px] mx-auto px-12 xl:px-24 py-4 xl:py-10">
             <svg
-              className="w-24"
+              className="w-12 xl:w-24"
               viewBox="0 0 112 75"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -32,31 +32,38 @@ export default function Home() {
               />
             </svg>
             <a
-              href="#"
-              className="rounded-full font-ibm font-medium text-lg bg-white px-12 py-4 text-[#802BE7]"
+              href="https://web.zid.sa/mazeed/activation"
+              className="rounded-full font-ibm font-medium xl:text-lg bg-white px-4 xl:px-12 py-1 xl:py-4 text-[#802BE7]"
             >
               اربط متجرك مجانًا
             </a>
           </nav>
           {/* CTA */}
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="font-shamel font-bold text-5xl text-center bg-clip-text text-transparent py-2 bg-gradient-to-l from-[#3FB8E8] via-[#7462F4] via-[#802BE7] to-[#E81A65]">
+          <div className="mt-12 xl:mt-0 flex flex-col items-center justify-center px-4 xl:px-0">
+            <h1 className="font-shamel font-bold text-4xl xl:text-5xl text-center bg-clip-text text-transparent py-2 bg-gradient-to-l from-[#3FB8E8] via-[#7462F4] via-[#802BE7] to-[#E81A65]">
               قناة بيع إضافية لمتجرك
             </h1>
-            <p className="mt-10 font-ibm text-lg text-center text-[#9C9C9C]">
+            <p className="mt-10 font-ibm xl:text-lg text-center text-[#9C9C9C]">
               توسّع في تجارتك مع مزيد، وأظهر منتجاتك لعملاء جدد بدون رسوم تأسيس
               أو رسوم شهرية
             </p>
             <a
-              href="#"
+              href="https://web.zid.sa/mazeed/activation"
               className="mt-8 font-ibm font-medium text-lg text-white bg-[#802BE7] rounded-full px-12 py-4"
             >
               اربط متجرك مجانًا
             </a>
             {/* video box */}
-            <div className="mt-20 rounded-2xl aspect-[16/8] w-full max-w-4xl bg-black relative">
+            <div className="mt-20 rounded-2xl aspect-[16/9] w-full max-w-4xl bg-black relative">
+              <div className="h-full w-full overflow-clip rounded-2xl">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/J73KbWa8QZY"
+                ></iframe>
+              </div>
               <Image
-                className="rounded-full w-24 absolute right-0 -mr-40 mt-8 border-4 border-white shadow-md"
+                className="rounded-full w-24 absolute right-0 bottom-0 -mr-52 mt-8 border-4 border-white shadow-md"
                 src="/p-1.png"
                 width={255}
                 height={255}
@@ -1040,7 +1047,7 @@ export default function Home() {
       </section>
       {/* features section */}
       <section>
-        <div className="pt-32 text-center">
+        <div className="pt-32 text-center px-4 xl:px-0">
           <h2 className="inline-block font-shamel font-bold text-3xl text-center bg-clip-text text-transparent py-2 bg-gradient-to-l from-[#3FB8E8] via-[#7462F4] via-[#802BE7] to-[#E81A65]">
             مع مزيد نموك يزيد
           </h2>
@@ -1051,7 +1058,7 @@ export default function Home() {
             </span>
             من المبيعات
           </p>
-          <div className="flex items-center gap-24 justify-between w-full max-w-screen-lg mx-auto mt-16 group">
+          <div className="flex flex-col xl:flex-row items-center gap-12 xl:gap-24 justify-between w-full max-w-screen-lg mx-auto mt-10 xl:mt-16 group">
             <div>
               <div className="flex items-center">
                 <div className="bg-[#7462F424] bg-opacity-[14%] p-4 rounded-full">
@@ -1093,8 +1100,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex items-center gap-24 justify-between w-full max-w-screen-lg mx-auto mt-32 group">
-            <div className="relative flex-grow min-h-[28rem]">
+          <div className="flex flex-col xl:flex-row items-center gap-12 xl:gap-24 justify-between w-full max-w-screen-lg mx-auto mt-20 xl:mt-32 group">
+            <div className="hidden xl:flex relative flex-grow min-h-[28rem]">
               <Image
                 className="absolute inset-0 transition-[opacity] duration-700 ease-in-out opacity-100 group-hover:opacity-0 group-hover:invisible"
                 src="/mazeed-marketing.png"
@@ -1108,6 +1115,7 @@ export default function Home() {
                 height={792}
               />
             </div>
+
             <div>
               <div className="flex items-center">
                 <div className="bg-[#E81A6524] bg-opacity-[14%] p-4 rounded-full">
@@ -1133,9 +1141,17 @@ export default function Home() {
                 التواصل الاجتماعي و داخل التطبيق
               </p>
             </div>
+            <div className="flex xl:hidden">
+              <Image
+                className=""
+                src="/mazeed-marketing-2.png"
+                width={987}
+                height={792}
+              />
+            </div>
           </div>
 
-          <div className="flex items-center gap-24 justify-between w-full max-w-screen-lg mx-auto mt-32">
+          <div className="flex flex-col xl:flex-row items-center gap-24 justify-between w-full max-w-screen-lg mx-auto mt-32">
             <div>
               <div className="flex items-center">
                 <div className="bg-[#802BE724] bg-opacity-[14%] p-4 rounded-full">
@@ -1170,7 +1186,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-32 relative z-0 bg-[#802BE7] w-full max-w-screen-xl mx-auto rounded-[32px] flex items-center justify-evenly py-32 overflow-clip">
+          <div className="mt-32 relative z-0 bg-[#802BE7] w-full max-w-screen-xl mx-auto rounded-[32px] flex flex-col xl:flex-row items-center justify-evenly py-12  xl:py-32 overflow-clip gap-16">
             <div className="bg-[#E81A65CC] absolute top-0 left-0 w-[20rem] h-[20rem] blur-[100px]  rounded-full -z-10 -ml-20 -mt-40"></div>
             <div className="bg-[#3FB8E8CC] absolute bottom-0 right-0 w-[20rem] h-[20rem] blur-[100px] rounded-full -z-10 -mr-20 -mb-40"></div>
 
@@ -1203,7 +1219,7 @@ export default function Home() {
       </section>
       {/* easy integration section */}
       <section>
-        <div className="text-center pt-32">
+        <div className="hidden xl:block text-center pt-32">
           <h2 className="inline-block font-shamel font-bold text-3xl text-center bg-clip-text text-transparent py-2 bg-gradient-to-l from-[#3FB8E8] via-[#7462F4] via-[#802BE7] to-[#E81A65]">
             ربط سهل بدون تعقيد
           </h2>
@@ -1305,6 +1321,115 @@ export default function Home() {
           </div>
 
           <div className="w-full justify-center flex items-center">
+            <a
+              href="#"
+              className="font-ibm font-medium text-lg text-white bg-[#802BE7] rounded-full px-12 py-4"
+            >
+              اربط متجرك مجانًا
+            </a>
+          </div>
+        </div>
+
+        <div className="block xl:hidden text-center pt-32">
+          <h2 className="inline-block font-shamel font-bold text-3xl text-center bg-clip-text text-transparent py-2 bg-gradient-to-l from-[#3FB8E8] via-[#7462F4] via-[#802BE7] to-[#E81A65]">
+            ربط سهل بدون تعقيد
+          </h2>
+          <p className="mt-6 font-ibm  text-center text-[#9C9C9C]">
+            ربط متجرك مع
+            <span className="inline-block font-shamel font-semibold mx-2  text-center bg-clip-text text-transparent py-2 bg-gradient-to-l from-[#3FB8E8] via-[#7462F4] via-[#802BE7] to-[#E81A65]">
+              مزيـــــــــــــد
+            </span>
+            لا يتطلب مستندات إضافية ولا تعقيدات تقنية
+          </p>
+
+          <div className="flex flex-col gap-12 w-full mt-12 px-12">
+            <div className="w-full rounded-[32px] border border-[#F8F4FE] bg-[#F9F9F9] bg-opacity-40 px-8 py-4">
+              <div className="p-3 rounded-full bg-[#8E86FF1A] w-fit">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.333 11.6666H7.99967C7.77866 11.6666 7.5667 11.7544 7.41042 11.9107C7.25414 12.067 7.16634 12.2789 7.16634 12.5C7.16634 12.721 7.25414 12.9329 7.41042 13.0892C7.5667 13.2455 7.77866 13.3333 7.99967 13.3333H11.333C11.554 13.3333 11.766 13.2455 11.9223 13.0892C12.0785 12.9329 12.1663 12.721 12.1663 12.5C12.1663 12.2789 12.0785 12.067 11.9223 11.9107C11.766 11.7544 11.554 11.6666 11.333 11.6666ZM14.6663 3.33329H13.683C13.5111 2.847 13.1929 2.42579 12.7722 2.12741C12.3515 1.82902 11.8488 1.66808 11.333 1.66663H9.66634C9.15055 1.66808 8.64784 1.82902 8.22712 2.12741C7.8064 2.42579 7.48827 2.847 7.31634 3.33329H6.33301C5.66997 3.33329 5.03408 3.59668 4.56524 4.06553C4.0964 4.53437 3.83301 5.17025 3.83301 5.83329V15.8333C3.83301 16.4963 4.0964 17.1322 4.56524 17.6011C5.03408 18.0699 5.66997 18.3333 6.33301 18.3333H14.6663C15.3294 18.3333 15.9653 18.0699 16.4341 17.6011C16.9029 17.1322 17.1663 16.4963 17.1663 15.8333V5.83329C17.1663 5.17025 16.9029 4.53437 16.4341 4.06553C15.9653 3.59668 15.3294 3.33329 14.6663 3.33329ZM8.83301 4.16663C8.83301 3.94561 8.92081 3.73365 9.07709 3.57737C9.23337 3.42109 9.44533 3.33329 9.66634 3.33329H11.333C11.554 3.33329 11.766 3.42109 11.9223 3.57737C12.0785 3.73365 12.1663 3.94561 12.1663 4.16663V4.99996H8.83301V4.16663ZM15.4997 15.8333C15.4997 16.0543 15.4119 16.2663 15.2556 16.4225C15.0993 16.5788 14.8874 16.6666 14.6663 16.6666H6.33301C6.11199 16.6666 5.90003 16.5788 5.74375 16.4225C5.58747 16.2663 5.49967 16.0543 5.49967 15.8333V5.83329C5.49967 5.61228 5.58747 5.40032 5.74375 5.24404C5.90003 5.08776 6.11199 4.99996 6.33301 4.99996H7.16634V5.83329C7.16634 6.05431 7.25414 6.26627 7.41042 6.42255C7.5667 6.57883 7.77866 6.66663 7.99967 6.66663H12.9997C13.2207 6.66663 13.4326 6.57883 13.5889 6.42255C13.7452 6.26627 13.833 6.05431 13.833 5.83329V4.99996H14.6663C14.8874 4.99996 15.0993 5.08776 15.2556 5.24404C15.4119 5.40032 15.4997 5.61228 15.4997 5.83329V15.8333ZM12.9997 8.33329H7.99967C7.77866 8.33329 7.5667 8.42109 7.41042 8.57737C7.25414 8.73365 7.16634 8.94561 7.16634 9.16663C7.16634 9.38764 7.25414 9.5996 7.41042 9.75588C7.5667 9.91216 7.77866 9.99996 7.99967 9.99996H12.9997C13.2207 9.99996 13.4326 9.91216 13.5889 9.75588C13.7452 9.5996 13.833 9.38764 13.833 9.16663C13.833 8.94561 13.7452 8.73365 13.5889 8.57737C13.4326 8.42109 13.2207 8.33329 12.9997 8.33329Z"
+                    fill="#8E86FF"
+                  />
+                </svg>
+              </div>
+              <p className="mt-3 text-right font-bold text-lg font-shamel text-[#545454]">
+                ١- مراجعة بيانات متجرك
+              </p>
+              <p className="text-right mt-2 text-[#787878] font-ibm">
+                بيانات متجرك وطرق التواصل كلها محفوظة مطلوب انك تراجعها
+              </p>
+              <Image
+                className="mt-4"
+                src="/step-1.png"
+                width={987}
+                height={792}
+              />
+            </div>
+            <div className="w-full rounded-[32px]  border border-[#F8F4FE] bg-[#F9F9F9] bg-opacity-40 px-8 py-4">
+              <div className="p-3 rounded-full bg-[#8E86FF1A] w-fit">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.333 11.6666H7.99967C7.77866 11.6666 7.5667 11.7544 7.41042 11.9107C7.25414 12.067 7.16634 12.2789 7.16634 12.5C7.16634 12.721 7.25414 12.9329 7.41042 13.0892C7.5667 13.2455 7.77866 13.3333 7.99967 13.3333H11.333C11.554 13.3333 11.766 13.2455 11.9223 13.0892C12.0785 12.9329 12.1663 12.721 12.1663 12.5C12.1663 12.2789 12.0785 12.067 11.9223 11.9107C11.766 11.7544 11.554 11.6666 11.333 11.6666ZM14.6663 3.33329H13.683C13.5111 2.847 13.1929 2.42579 12.7722 2.12741C12.3515 1.82902 11.8488 1.66808 11.333 1.66663H9.66634C9.15055 1.66808 8.64784 1.82902 8.22712 2.12741C7.8064 2.42579 7.48827 2.847 7.31634 3.33329H6.33301C5.66997 3.33329 5.03408 3.59668 4.56524 4.06553C4.0964 4.53437 3.83301 5.17025 3.83301 5.83329V15.8333C3.83301 16.4963 4.0964 17.1322 4.56524 17.6011C5.03408 18.0699 5.66997 18.3333 6.33301 18.3333H14.6663C15.3294 18.3333 15.9653 18.0699 16.4341 17.6011C16.9029 17.1322 17.1663 16.4963 17.1663 15.8333V5.83329C17.1663 5.17025 16.9029 4.53437 16.4341 4.06553C15.9653 3.59668 15.3294 3.33329 14.6663 3.33329ZM8.83301 4.16663C8.83301 3.94561 8.92081 3.73365 9.07709 3.57737C9.23337 3.42109 9.44533 3.33329 9.66634 3.33329H11.333C11.554 3.33329 11.766 3.42109 11.9223 3.57737C12.0785 3.73365 12.1663 3.94561 12.1663 4.16663V4.99996H8.83301V4.16663ZM15.4997 15.8333C15.4997 16.0543 15.4119 16.2663 15.2556 16.4225C15.0993 16.5788 14.8874 16.6666 14.6663 16.6666H6.33301C6.11199 16.6666 5.90003 16.5788 5.74375 16.4225C5.58747 16.2663 5.49967 16.0543 5.49967 15.8333V5.83329C5.49967 5.61228 5.58747 5.40032 5.74375 5.24404C5.90003 5.08776 6.11199 4.99996 6.33301 4.99996H7.16634V5.83329C7.16634 6.05431 7.25414 6.26627 7.41042 6.42255C7.5667 6.57883 7.77866 6.66663 7.99967 6.66663H12.9997C13.2207 6.66663 13.4326 6.57883 13.5889 6.42255C13.7452 6.26627 13.833 6.05431 13.833 5.83329V4.99996H14.6663C14.8874 4.99996 15.0993 5.08776 15.2556 5.24404C15.4119 5.40032 15.4997 5.61228 15.4997 5.83329V15.8333ZM12.9997 8.33329H7.99967C7.77866 8.33329 7.5667 8.42109 7.41042 8.57737C7.25414 8.73365 7.16634 8.94561 7.16634 9.16663C7.16634 9.38764 7.25414 9.5996 7.41042 9.75588C7.5667 9.91216 7.77866 9.99996 7.99967 9.99996H12.9997C13.2207 9.99996 13.4326 9.91216 13.5889 9.75588C13.7452 9.5996 13.833 9.38764 13.833 9.16663C13.833 8.94561 13.7452 8.73365 13.5889 8.57737C13.4326 8.42109 13.2207 8.33329 12.9997 8.33329Z"
+                    fill="#8E86FF"
+                  />
+                </svg>
+              </div>
+              <p className="mt-3 text-right font-bold text-lg font-shamel text-[#545454]">
+                ٢- اختيار المنتجات من متجرك{" "}
+              </p>
+              <p className="text-right mt-2 text-[#787878] font-ibm">
+                بيانات متجرك وطرق التواصل كلها محفوظة مطلوب انك تراجعها
+              </p>
+              <Image
+                className="mt-4"
+                src="/step-2.png"
+                width={987}
+                height={792}
+              />
+            </div>
+            <div className="w-full rounded-[32px]  border border-[#F8F4FE] bg-[#F9F9F9] bg-opacity-40 px-8 py-4">
+              <div className="p-3 rounded-full bg-[#8E86FF1A] w-fit">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.333 11.6666H7.99967C7.77866 11.6666 7.5667 11.7544 7.41042 11.9107C7.25414 12.067 7.16634 12.2789 7.16634 12.5C7.16634 12.721 7.25414 12.9329 7.41042 13.0892C7.5667 13.2455 7.77866 13.3333 7.99967 13.3333H11.333C11.554 13.3333 11.766 13.2455 11.9223 13.0892C12.0785 12.9329 12.1663 12.721 12.1663 12.5C12.1663 12.2789 12.0785 12.067 11.9223 11.9107C11.766 11.7544 11.554 11.6666 11.333 11.6666ZM14.6663 3.33329H13.683C13.5111 2.847 13.1929 2.42579 12.7722 2.12741C12.3515 1.82902 11.8488 1.66808 11.333 1.66663H9.66634C9.15055 1.66808 8.64784 1.82902 8.22712 2.12741C7.8064 2.42579 7.48827 2.847 7.31634 3.33329H6.33301C5.66997 3.33329 5.03408 3.59668 4.56524 4.06553C4.0964 4.53437 3.83301 5.17025 3.83301 5.83329V15.8333C3.83301 16.4963 4.0964 17.1322 4.56524 17.6011C5.03408 18.0699 5.66997 18.3333 6.33301 18.3333H14.6663C15.3294 18.3333 15.9653 18.0699 16.4341 17.6011C16.9029 17.1322 17.1663 16.4963 17.1663 15.8333V5.83329C17.1663 5.17025 16.9029 4.53437 16.4341 4.06553C15.9653 3.59668 15.3294 3.33329 14.6663 3.33329ZM8.83301 4.16663C8.83301 3.94561 8.92081 3.73365 9.07709 3.57737C9.23337 3.42109 9.44533 3.33329 9.66634 3.33329H11.333C11.554 3.33329 11.766 3.42109 11.9223 3.57737C12.0785 3.73365 12.1663 3.94561 12.1663 4.16663V4.99996H8.83301V4.16663ZM15.4997 15.8333C15.4997 16.0543 15.4119 16.2663 15.2556 16.4225C15.0993 16.5788 14.8874 16.6666 14.6663 16.6666H6.33301C6.11199 16.6666 5.90003 16.5788 5.74375 16.4225C5.58747 16.2663 5.49967 16.0543 5.49967 15.8333V5.83329C5.49967 5.61228 5.58747 5.40032 5.74375 5.24404C5.90003 5.08776 6.11199 4.99996 6.33301 4.99996H7.16634V5.83329C7.16634 6.05431 7.25414 6.26627 7.41042 6.42255C7.5667 6.57883 7.77866 6.66663 7.99967 6.66663H12.9997C13.2207 6.66663 13.4326 6.57883 13.5889 6.42255C13.7452 6.26627 13.833 6.05431 13.833 5.83329V4.99996H14.6663C14.8874 4.99996 15.0993 5.08776 15.2556 5.24404C15.4119 5.40032 15.4997 5.61228 15.4997 5.83329V15.8333ZM12.9997 8.33329H7.99967C7.77866 8.33329 7.5667 8.42109 7.41042 8.57737C7.25414 8.73365 7.16634 8.94561 7.16634 9.16663C7.16634 9.38764 7.25414 9.5996 7.41042 9.75588C7.5667 9.91216 7.77866 9.99996 7.99967 9.99996H12.9997C13.2207 9.99996 13.4326 9.91216 13.5889 9.75588C13.7452 9.5996 13.833 9.38764 13.833 9.16663C13.833 8.94561 13.7452 8.73365 13.5889 8.57737C13.4326 8.42109 13.2207 8.33329 12.9997 8.33329Z"
+                    fill="#8E86FF"
+                  />
+                </svg>
+              </div>
+              <p className="mt-3 text-right font-bold text-lg font-shamel text-[#545454]">
+                ٣- اعتماد الطلب من فريق مزيد
+              </p>
+              <p className="text-right mt-2 text-[#787878] font-ibm">
+                بيانات متجرك وطرق التواصل كلها محفوظة مطلوب انك تراجعها
+              </p>
+              <Image
+                className="mt-4"
+                src="/step-3.png"
+                width={987}
+                height={792}
+              />
+            </div>
+          </div>
+
+          <div className="w-full mt-12 justify-center flex items-center">
             <a
               href="#"
               className="font-ibm font-medium text-lg text-white bg-[#802BE7] rounded-full px-12 py-4"
